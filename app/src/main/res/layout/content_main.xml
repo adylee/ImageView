@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+   app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/layout1"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plus"
+        android:text="plus"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minus"
+        android:text="minus"
+        android:layout_toRightOf="@id/plus"
+        />
+    <!--     android:below="plus"-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:text="next"
+        android:layout_toRightOf="@id/minus"
+        />
+</RelativeLayout>
+   
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitCenter"
+        android:id="@+id/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#125"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bdd"
+        android:layout_below="@id/layout1"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/add"
+        android:layout_alignParentEnd="true" />
+    
+    </RelativeLayout>
